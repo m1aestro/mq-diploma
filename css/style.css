@@ -101,7 +101,7 @@ body {
 
 .download-store {
   display: flex;
-  width: 50%;
+  width: 55%;
   padding: 0.6rem 7rem 0.6rem 8rem;
   border: none;
   border-radius: 15px;
@@ -114,9 +114,9 @@ body {
 }
 
 .download-icon {
-  width: 3rem;
+  width: 4rem;
   height: 2.5rem;
-  margin-right: 0.7rem;
+  margin-right: 0.2rem;
   fill: #ffffff;
 }
 
@@ -124,15 +124,16 @@ body {
   line-height: 1rem;
   font-weight: 100;
   margin-top: 0.4rem;
+  text-align: left;
 }
 
 .download-title2 {
   font-weight: 700;
-  display: inline-block;
+  display: block;
 }
 
 .download-title2-position {
-  display: inline-block;
+  display: block;
   font-weight: 700;
 }
 
@@ -386,57 +387,6 @@ body {
   stroke: #ffffff;
 }
 
-.download-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.download-footer a {
-  text-decoration: none;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.download-store-footer {
-  display: flex;
-  width: 50%;
-  padding: 0.6rem 7rem 0.6rem 8rem;
-  border: none;
-  border-radius: 15px;
-  font-size: 0.9rem;
-  background-color: #5e42b0;
-}
-
-.download-store-footer + .download-store-footer {
-  margin-top: 1rem;
-}
-
-.download-icon-footer {
-  height: 2.5rem;
-  margin-right: 0.7rem;
-  fill: #ffffff;
-  text-align: left;
-}
-
-.download-title-footer {
-  line-height: 1rem;
-  font-weight: 100;
-  margin-top: 0.4rem;
-}
-
-.download-title2-footer {
-  font-weight: 700;
-  display: block;
-  text-align: left;
-}
-
-.download-title2-position-footer {
-  display: inline-block;
-  font-weight: 700;
-}
-
 @media (min-width: 641px) and (max-width: 960px) {
   
   /*header*/
@@ -492,7 +442,11 @@ body {
 
   .download-title {
     line-height: 1.7rem;
-    margin-top: 0.5rem
+    margin-top: 1rem
+  }
+
+  .download-title2 {
+    display: inline-block;
   }
 
   .download-store + .download-store {
@@ -507,9 +461,9 @@ body {
   }
 
   .download-icon {
-    width: 5rem;
-    height: 4rem;
-    margin-right: 2.6rem;
+    width: 7rem;
+    height: 5rem;
+    margin-right: 2rem;
   }
 
   /*athlets, players*/
@@ -720,26 +674,6 @@ body {
     height: 4.5rem;
     margin: 5.5rem auto 2rem 28rem;
   }
-
-  .download-footer {
-    flex-direction: row;
-    margin: 0 auto;
-  }
-
-  .download-store-footer + .download-store-footer {
-    margin-top: 0;
-    margin-left: 3rem;
-  }
-
-  .download-store-footer {
-    padding: 2rem 6rem 2rem 6rem;
-    border-radius: 40px;
-    font-size: 1.4rem;
-  }
-
-  .download-icon-footer {
-    height: 4rem;
-  } 
 }
 
 @media (min-width: 961px) {
@@ -809,7 +743,7 @@ body {
   }
 
   .download-store {
-    width: 25%;
+    width: 27%;
     padding: 2rem 6rem 2rem 6rem;
     border-radius: 40px;
     font-size: 1.4rem
@@ -817,12 +751,16 @@ body {
 
   .download-title {
     line-height: 1.4rem;
-    margin-top: 0.5rem;
+    margin-top: 0.9rem;
+  }
+  
+  .download-title2 {
+    display: inline-block;
   }
 
   .download-icon {
-    width: 5.7rem;
-    height: 3.5rem;
+    width: 6rem;
+    height: 4rem;
     margin-right: 2rem;
   }
 
@@ -1096,24 +1034,7 @@ body {
   }
 
   .download-footer {
-    margin: 1% 28%;
-    flex-direction: row;
-  }
-
-  .download-store-footer + .download-store-footer {
-    margin-top: 0;
-    margin-left: 5rem;
-  }
-
-  .download-store-footer {
-    padding: 2rem 6rem 2rem 6rem;
-    border-radius: 40px;
-    font-size: 1.3rem;
-  }
-
-  .download-icon-footer {
-    height: 3.5rem;
-    margin-right: 1.5rem;
+    margin: 0 20%;
   }
 
   .footer-logo {
