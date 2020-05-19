@@ -1,0 +1,985 @@
+ /* ========== BASE ========== */
+
+ html { box-sizing: border-box; }
+ *, *:before, *:after { box-sizing: inherit; }
+
+ html {
+   font-family: 'Open Sans', Verdana, sans-serif;
+   letter-spacing: 0.05em;
+ }
+
+
+
+ /* ========== MAIN PAGE ========== */
+
+ /* ----------- Cover ----------- */
+
+ .cover {
+   position: relative;
+   min-height: 568px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+
+   color: #ffffff;
+
+   background-image: url("../img/football_767.jpg");
+   background-size: cover;
+ }
+
+ .cover::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
+   background-color: #090a36;
+   opacity: 0.9;
+   z-index: 0;
+ }
+
+ .cover-content {
+   position: relative;
+   z-index: 10;
+ }
+
+ .logotype {
+   display: block;
+   width: 133px;
+   height: 36px;
+   margin-top: 13px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .cover-tagline {
+   max-width: 11em;
+   margin-top: 132px;
+   margin-bottom: 90px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 20px;
+   padding-right: 20px;
+
+   font-size: 28px;
+   font-weight: 700;
+   text-transform: uppercase;
+ }
+
+ .cover-tagline span {
+   display: block;
+   margin-top: 24px;
+   margin-bottom: 24px;
+ }
+
+ .cover-tagline span:nth-child(2) {
+   padding-left: 1.6em;
+ }
+
+ .download-links {
+   width: 100%;
+   padding-right: 20px;
+   padding-left: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 50px;
+ }
+
+ .btn {
+   display: block;
+   width: 100%;
+   padding-top: 1em;
+   padding-bottom: 1em;
+   margin-top: 1.75em;
+   margin-bottom: 1.75em;
+
+   font-size: 8px;
+   text-decoration: none;
+   text-transform: uppercase;
+   background-color: #5e3db3;
+   border-radius: 2.2em;
+ }
+
+ .btn-label {
+   position: relative;
+   display: block;
+   max-width: 15em;
+   padding-left: 3.65em;
+   margin: auto;
+
+   color: #ffffff;
+   fill: #ffffff;
+ }
+
+ .btn-label span {
+   display: block;
+   font-weight: 700;
+ }
+
+ .btn:hover,
+ .btn:focus {
+   outline: 0;
+   background-color: #7452cc;
+ }
+
+ .btn:active {
+   background-color: #090a36;
+ }
+
+ .btn-label::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+
+   background-repeat: no-repeat;
+   background-size: contain;
+ }
+
+ .btn-download-apple .btn-label::before {
+   width: 2.65em;
+   height: 3.25em;
+   background-image: url("../img/apple-icon.svg");
+ }
+
+ .btn-download-play .btn-label::before {
+   width: 2.75em;
+   height: 3em;
+   background-image: url("../img/play-icon.svg");
+ }
+
+
+  @media (min-width: 767px) {
+    .cover {
+      background-image: url("../img/football_1280.jpg");
+    }
+
+    .logotype {
+      width: 205px;
+      height: 56px;
+      margin-top: 19px;
+    }
+
+    .cover-tagline {
+      margin-top: 167px;
+      margin-bottom: 290px;
+      max-width: 10em;
+
+      font-size: 64px;
+    }
+
+    .cover-tagline span {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .download-links {
+      max-width: 728px;
+      padding-right: 24px;
+      padding-left: 24px;
+      margin-bottom: 70px;
+
+      display: flex;
+    }
+
+    .btn {
+      width: 310px;
+      padding-top: 1.6em;
+      padding-bottom: 1.6em;
+      margin: 1.1em;
+
+      font-size: 14px;
+      border-radius: 5.5em;
+    }
+
+    .btn-label {
+      margin: auto;
+    }
+
+    .btn-download-apple .btn-label {
+      padding-left: 4em;
+    }
+
+    .btn-download-play .btn-label {
+      padding-left: 5em;
+    }
+
+    .btn-download-apple .btn-label::before {
+      width: 3em;
+      height: 3.5em;
+    }
+
+    .btn-download-play .btn-label::before {
+      width: 3em;
+      height: 3.215em;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .cover {
+      background-image: url("../img/football_1920.jpg");
+    }
+
+    .logotype {
+      width: 191px;
+      height: 52px;
+      margin-top: 25px;
+    }
+
+    .cover-tagline {
+      margin-top: 283px;
+      margin-bottom: 186px;
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 1558px;
+
+      font-size: 90px;
+      line-height: 1;
+    }
+
+    .cover-tagline span {
+      margin-bottom: 25px;
+    }
+
+    .cover-tagline span:last-child {
+      text-align: right;
+    }
+
+    .download-links {
+      max-width: 722px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 90px;
+    }
+
+    .btn {
+      margin: 1.8em;
+
+      font-size: 14px;
+      border-radius: 5.5em;
+    }
+  }
+
+
+ /* ----------- Athlets and Players ----------- */
+
+ .athlets,
+ .players {
+   position: relative;
+ }
+
+ .athlets img,
+ .players img {
+   position: relative;
+   min-height: 100px;
+   top: 0px;
+
+   display: block;
+   margin: auto;
+ }
+
+ .athlets img {
+   margin-bottom: -55px;
+ }
+
+ .players img {
+   margin-bottom: -25px;
+ }
+
+ .section-title {
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 15px;
+   padding-bottom: 20px;
+   margin-top: 0;
+   margin-bottom: 0;
+
+   font-size: 50px;
+   line-height: 1em;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 0;
+   color: #e7e7e7;
+ }
+
+ .feature-list {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   counter-reset: section-counter;
+ }
+
+ .feature-list > li {
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+
+   counter-increment: section-counter;
+ }
+
+ .feature-list > li:first-child {
+   padding-top: 75px;
+   background-color: #fafafa;
+ }
+
+ .feature-list > li:nth-child(2) {
+   background-color: #f5f4f9;
+ }
+
+ .athlets .feature-list > li:last-child {
+   background-color: #5e3db3;
+ }
+
+ .players .feature-list > li:last-child {
+   background-color: #090a36;
+ }
+
+ .feature-list h3 {
+   position: relative;
+   padding-left: 26px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   margin-top: 10px;
+   margin-bottom: 0;
+
+   font-size: 23px;
+   line-height: 1em;
+   vertical-align: top;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #c1c1c1;
+ }
+
+ /* Нумерация */
+ .feature-list h3::before {
+   content: "0" counter(section-counter);
+   position: absolute;
+   top: 20px;
+   left: 0;
+   font-size: 14px;
+   line-height: 1.2em;
+   font-weight: 700;
+   color: #000000;
+ }
+
+ .players .feature-list > li:last-child h3::before {
+   color: #5e3db3;
+ }
+
+ /* Подчёркивание номера */
+ .feature-list h3::after {
+   content: '';
+   position: absolute;
+   bottom: 22px;
+   left: 0;
+   width: 17px;
+   height: 4px;
+   background-color: #5e3db3;
+   border-radius: 2px;
+ }
+
+ /* 
+ TO DO:
+ Найти более аккуратное решение подчёркивания,
+ так чтобы оно тянулось по ширине номера.
+ Желательно, не добавляя лишних элементов
+ в разметку.
+ */
+
+ .feature-list > li:last-child h3::after {
+   background-color: #ffffff;
+ }
+
+ .feature-list p {
+   padding-bottom: 35px;
+   margin-top: 0;
+   margin-bottom: 0;
+
+   font-size: 15px;
+   line-height: 1.2em;
+ }
+
+ .feature-list > li:last-child p {
+   color: #ffffff;
+ }
+
+
+  @media (min-width: 767px) {
+    .athlets,
+    .players {
+      padding-top: 28px;
+      overflow: hidden;
+    }
+
+    .athlets img {
+      position: absolute;
+      top: 95px;
+      left: -150px;
+    }
+
+    .players img { 
+      position: absolute;
+      top: 40px; 
+      right: 0;
+    }
+
+    .feature-list > li:first-child {
+      padding-top: 20px;
+      background-color: transparent;
+    }
+
+    .athlets .section-title,
+    .athlets h3,
+    .athlets p {
+      max-width: 444px;
+      margin-left: 291px;
+      margin-right: auto;
+    }
+
+    .players .section-title,
+    .players h3,
+    .players p {
+      max-width: 430px;
+    }
+
+    .feature-list li {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .section-title {
+      padding-top: 20px;
+      margin-top: 25px;
+      
+      font-size: 80px;
+    }
+
+    .feature-list h3 {
+      margin-top: 0;
+      padding-left: 30px;
+
+      font-size: 32px;
+    }
+
+    .feature-list h3::before {
+      margin-bottom: 26px;
+
+      font-size: 18px;
+    }
+
+    .feature-list h3::after {
+      bottom: 24px;
+      width: 21px;
+      height: 5px;
+      border-radius: 2.5px;
+    }
+
+    .feature-list p {
+      padding-bottom: 12px;
+
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    .players li:last-child p {
+      font-size: 18px;
+    }
+ }
+
+
+ @media (min-width: 1024px) {
+   .athlets .wrapper,
+   .players .wrapper {
+      max-width: 1558px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .athlets img {
+    top: 28px;
+    left: 50%;
+    transform: translateX(-100%);
+  }
+
+   .athlets .section-title,
+   .athlets h3,
+   .athlets p {
+      max-width: 50%;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: 0;
+   }
+
+   .athlets .section-title,
+   .athlets p {
+     padding-left: 50px;
+   }
+
+   .athlets h3 {
+     padding-left: 80px;
+   }
+
+   .athlets h3::before,
+   .athlets h3::after {
+     left: 50px;
+   }
+
+   .players img {
+    top: 28px;
+    right: calc(50% + 150px);
+    transform: translateX(100%);
+  }
+
+   .players .section-title,
+   .players h3,
+   .players p {
+      max-width: 50%;
+      padding-right: 15px;
+      margin-left: 0;
+      margin-right: auto;
+   }
+
+   .players .section-title,
+   .players p {
+     padding-left: 15px;
+   }
+
+   .players h3 {
+    padding-left: 45px;
+   }
+
+   .players h3::before,
+   .players h3::after {
+     left: 15px;
+   }
+
+   .feature-list li {
+     padding-left: 0;
+     padding-right: 0;
+   }
+
+   .section-title {
+    margin-top: 55px;
+    margin-bottom: 35px;
+   }
+
+   .feature-list h3 {
+     margin-top: 15px;
+     font-size: 36px;
+   }
+
+   .feature-list h3::before {
+     top: 22px;
+   }
+
+   .feature-list p {
+     padding-bottom: 35px;
+
+     font-size: 20px;
+   }
+ }
+
+
+ /* ----------- Instructions ----------- */
+
+ .actions-list {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   counter-reset: section-counter;
+ }
+
+ .actions-list > li {
+   margin-bottom: 45px;
+   counter-increment: section-counter;
+ }
+
+ .actions-list img {
+   display: block;
+   min-height: 120px;
+   max-width: 100%;
+   height: auto;
+ }
+
+ .actions-list h3 {
+   position: relative;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 20px;
+   margin-top: 12px;
+   margin-bottom: 0;
+
+   font-size: 28px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #c1c1c1;
+ }
+
+ /* Нумерация */
+ .actions-list h3::before {
+   content: "0" counter(section-counter);
+   position: absolute;
+   top: -5em;
+   left: 20px;
+
+   padding-left: 26px;
+   padding-right: 26px;
+   padding-top: 26px;
+   padding-bottom: 30px;
+
+   font-size: 14px;
+   line-height: 1em;
+   font-weight: 700;
+
+   background-color: #5e42b0;
+   color: #ffffff;
+ }
+
+ /* Подчёркивание номера */
+ .actions-list h3::after {
+   content: '';
+   position: absolute;
+   top: -27px;
+   left: 46px;
+   width: 17px;
+   height: 4px;
+   background-color: #8f78ca;
+   border-radius: 2px;
+ }
+
+ .actions-list p {
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+   margin-top: 0;
+   margin-bottom: 0;
+
+   font-size: 16px;
+   line-height: 1.2em;
+ }
+
+
+ @media (min-width: 767px) {
+
+  .actions-list h3 {
+    max-width: 767px;
+    padding-top: 29px;
+    padding-bottom: 25px;
+    padding-left: 24px;
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-size: 80px;
+  }
+
+  .actions-list h3::before {
+    top: -5em;
+    left: 1em;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 40px;
+    padding-bottom: 52px;
+ 
+    font-size: 24px;
+  }
+
+  .actions-list h3::after {
+    top: -52px;
+    left: 68px;
+    width: 28px;
+    height: 5px;
+    border-radius: 2.5px;
+  }
+
+  .actions-list p {
+    max-width: 767px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 24px;
+  }
+ }
+
+
+ @media (min-width: 1280px) {
+   .actions-list > li { 
+      margin: 0;
+      display: flex;
+      align-items: center;
+   }
+
+   .actions-list picture,
+   .action-descript {
+      flex-basis: 50%;
+   }
+
+   .actions-list picture {
+     overflow: hidden;
+   }
+
+   .actions-list img {
+    width: 100%;
+  }
+
+   .action-descript {
+     margin-right: auto;
+     margin-left: 0;
+   }
+
+   .actions-list h3,
+   .actions-list p {
+     max-width: 780px;
+     padding-bottom: 70px;
+     padding-left: 130px;
+     padding-right: 15px;
+     margin-left: 0;
+     margin-right: auto;
+     margin-top: 0;
+   }
+
+   .actions-list h3 {
+     padding-top: 70px;
+   }
+
+   .actions-list h3::before {
+    top: 50%;
+    left: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 60px;
+    padding-bottom: 75px;
+
+    transform: translate(-50%, -50%);
+ 
+    font-size: 24px;
+  }
+
+  .actions-list h3::after {
+    top: calc(50% + 12px);
+    left: 0;
+    width: 28px;
+    height: 5px;
+    border-radius: 2.5px;
+
+    transform: translateX(-50%);
+  }
+
+   .actions-list li:nth-child(2) picture {
+     order: 2;
+   }
+
+   .actions-list li:nth-child(2) .action-descript {
+     order: 1;
+   }
+   
+  
+   .actions-list li:nth-child(2) h3,
+   .actions-list li:nth-child(2) p {
+     padding-left: 15px;
+     padding-right: 130px;
+     margin-right: 0;
+     margin-left: auto;
+   }
+
+   .actions-list li:nth-child(2) h3::before {
+    left: auto;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+
+  .actions-list li:nth-child(2) h3::after {
+    left: auto;
+    right: 0;
+    transform: translateX(50%);
+  }
+ }
+
+
+ /* ----------- Footer ----------- */
+
+ footer {
+   position: relative;
+   min-height: 568px;
+   padding-top: 20px;
+   padding-bottom: 10px;
+
+   color: #ffffff;
+
+   background-image: url("../img/game_767.jpg");
+   background-size: cover;
+ }
+
+ footer::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
+   background-color: #090a36;
+   opacity: 0.9;
+
+   z-index: 0;
+ }
+
+ .footer-content {
+  position: relative;
+  z-index: 10;
+}
+
+ .branding-group {
+    margin-top: 79px;
+    margin-bottom: 75px;
+ }
+
+ .logomark {
+   width: 72px;
+   padding-top: 12px;
+   padding-bottom: 12px;
+
+   margin-left: auto;
+   margin-right: auto;
+
+   margin-bottom: 55px;
+
+   background-color: #5e3db3;
+   background: -webkit-linear-gradient(to bottom, #7751db, #50329c);
+   background: linear-gradient(to bottom, #7751db, #50329c);
+   border-radius: 22px;
+ }
+
+ .logomark img {
+   display: block;
+   width: 57px;
+   height: 47px;
+
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ footer h2 {
+   margin-top: 0;
+   margin-bottom: 10px;
+
+   text-align: center;
+   font-size: 32px;
+   line-height: 1em;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #ffffff;
+ }
+
+ .footer-tagline {
+   margin-top: 0;
+   margin-bottom: 0;
+
+   text-align: center;
+   font-size: 14px;
+   text-transform: uppercase;
+   color: #9b8dc3;
+ }
+
+ .footer-logo {
+   margin-top: 82px;
+   margin-bottom: 0;
+ }
+
+
+ @media (min-width: 767px) {
+  footer {
+    background-image: url("../img/game_1280.jpg");
+  }
+
+  .branding-group {
+    margin-top: 106px;
+    margin-bottom: 280px;
+  }
+
+  .logomark {
+    width: 130px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-bottom: 72px;
+ 
+    border-radius: 22px;
+  }
+
+  .logomark img {
+    width: 104px;
+    height: 85px;
+  }
+
+  footer h2 {
+    font-size: 80px;
+  }
+
+  .footer-tagline {
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+
+  .footer-logo {
+    margin-top: 55px;
+    margin-bottom: 13px;
+  }
+ }
+
+ @media (min-width: 1280px) {
+  footer {
+    background-image: url("../img/game_1920.jpg");
+  }
+
+  .branding-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    max-width: 870px;
+    margin-top: 208px;
+    margin-bottom: 152px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logomark {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 37px;
+  }
+
+  footer h2 {
+    text-align: left;
+  }
+
+  .footer-tagline {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .footer-logo {
+    margin-top: 237px;
+    margin-bottom: 42px;
+  }
+ }
+
+
+ /* ========== UTILITIES ========== */
+
+ .visually-hidden {
+   position: absolute !important;
+   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+   clip: rect(1px, 1px, 1px, 1px);
+   padding: 0 !important;
+   border: 0 !important;
+   height: 1px !important;
+   width: 1px !important;
+   overflow: hidden;
+ }
